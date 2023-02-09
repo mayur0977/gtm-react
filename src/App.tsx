@@ -2,9 +2,8 @@ import "./App.css";
 
 import TagManager from "react-gtm-module";
 
-TagManager.initialize({ gtmId: "GTM-NKM5DRZ" });
-
 function App() {
+  TagManager.initialize({ gtmId: "GTM-NKM5DRZ" });
   const clickHandle1 = () => {
     TagManager.dataLayer({
       dataLayer: {
