@@ -28,11 +28,22 @@ function App() {
       },
     });
   };
+  const clickHandleAnother = () => {
+    TagManager.dataLayer({
+      dataLayer: {
+        event: "not_added_event",
+        category: " click 2",
+      },
+    });
+  };
   return (
     <div className="App">
       <button onClick={() => clickHandle1()}>GTM check custom 1</button>
       <button onClick={() => clickHandle2()}>GTM check custom 1</button>
-      <button onClick={() => clickHandle()}>click default</button>
+      <button onClick={() => clickHandle()}>click default button</button>
+      <button onClick={() => clickHandleAnother()}>
+        click default not added event
+      </button>
     </div>
   );
 }
